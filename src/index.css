@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7f6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.section__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color:#f5f7f6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+
+.header__title-bold {
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.header__menu {
+  flex: 1; /* Расширяем меню, чтобы занять свободное пространство */
+  display: flex;
+  justify-content: center; /* Центрируем элементы меню */
+}
+
+.header__menu-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu-item {
+  margin-right: 36px;
+}
+
+.header__menu-item:last-child {
+  margin-right: 0;
+}
+
+.header__menu-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header__button {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 60px;
+}
+
+.header__button:hover {
+  background-color: #333333;
+}
+
+.section__second{
+  background-color:#f5f7f6;
+}
+
+.basic__info{
+  background-color:#fcfcfc;
+  width: 100%;
+}
+
+.dashboard{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.dashboard_text-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрирует элементы по вертикали */
+  align-items: flex-start; /* Выравнивает элементы по левому краю */
+  text-align: left; /* Выравнивание текста по левому краю */
+  width: 55%; 
+}
+
+.dashboard__title {
+  font-size: 62px;
+  line-height: 93px;
+ font-family: 'Poppins', sans-serif;
+ color: #424242;
+ margin: 0;
+ padding: 0;
+}
+
+.dashboard__text {
+  color: #8B8B8B;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard__link {
+  list-style: none;
+  text-decoration: none;
+  color: #8B8B8B;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color:#fcfcfc;
+}
+.bio__text-all {
+  width: 45%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bio__pre-title {
+  color: #8B8B8B;
+  font-size: 24px;
+}
+
+.bio__title {
+  color: #424242;
+  font-size: 48px;
+}
+
+.bio__main-text {
+  color: #8B8B8B;
+  font-size: 16px;
+}
+
+.bio__link {
+  display: inline-block;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.projects {
+  text-align: center;
+  padding: 60px 20px;
+  background-color:#fcfcfc;
+}
+
+.projects__title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.projects__subtitle {
+  font-size: 18px;
+  color: #8B8B8B;
+  margin-bottom: 40px;
+}
+
+/* Сетка для карточек */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Стили для карточек */
+.project-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-card__text {
+  font-size: 16px;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+/* Заглушка для изображений */
+.project-card__image {
+  height: 120px;
+  border-radius: 8px;
+}
+
+.project-card__image.google {
+  background: linear-gradient(45deg, #fbbc05, #ea4335, #34a853, #4285f4);
+}
+
+.project-card__image.tiktok {
+  background: radial-gradient(circle at 70% 70%, #ee1d52, #69c9d0, #000000);
+}
+
+/* Ссылка на другие проекты */
+.projects__link {
+  display: inline-block;
+  margin-top: 40px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #333;
+  transition: color 0.3s ease;
+}
+
+.projects__link:hover {
+  color: #000000;
+}
+
+/*ЧЕТВЕРТЫЙ ЭКРАН*/
+
+.client{
+  font-family: 'Poppins', sans-serif;
+}
+
+.clients__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__title-start{
+ font-size: 48px;
+ color: #424242;
+ font-weight:500;
+ margin-bottom: 0;
+}
+
+.clients__title-p{
+  font-size: 16px;
+  color: #8B8B8B;
+  margin-top: 15px;
+}
+
+.clients__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.clients__card{
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.client__img {
+  height: 220px;
+  width: 220px;
+}
+
+.client__text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Теперь элементы будут выровнены по левому краю */
+  align-content: flex-start; /* Также выравнивание по левому краю */
+  margin-left: 24px;
+}
+
+.client__card-name{
+  color: #424242;
+  font-size: 24px;
+}
+.client__card-title{
+  color: #8B8B8B;
+  font-size: 18px;
+}
+.client__card-bio{
+  color: #424242;
+  font-size: 16px;
+}
+
+.the__end{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 200px;
+  padding: 40px;
+}
+
+.the__end-logo{
+  color:#424242;
+  font-size: 24px;  
+}
+
+.the__end-logo-bold {
+  font-weight: 600;
+  
+}
+
+.the__end-text{
+  color: #8B8B8B;
+  font-size: 16px;
+}
+
+.the__end__menu-list{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.the__end__menu-item{
+  text-decoration: none;
+  color: #8B8B8B;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.the__end__menu-item a:hover {
+  color: #333333; 
+}
